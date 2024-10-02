@@ -1,6 +1,7 @@
 // src/App.js
 import React from "react";
 import man from "../assets/portfolioman.jpg";
+import { FaArrowRight } from "react-icons/fa6";
 
 const Home = () => {
   return (
@@ -10,19 +11,32 @@ const Home = () => {
     >
       <div className="container mx-auto flex flex-col-reverse md:flex-row items-center justify-between  px-4">
         {/* Left Section */}
-        <div className="text-white text-center md:text-left">
+        <div className="text-white text-center md:text-left md:-mt-10">
           <h1 className="text-4xl md:text-6xl font-bold mb-4 animate-bottom-to-top">
             Hello I'm
           </h1>
           <h2 className="text-5xl md:text-7xl font-extrabold text-white mb-6">
             PriyaDharshan
           </h2>
-          <p className="text-xl md:text-2xl mb-4 font-mono animate-left-to-right">
-            Civil Engineer
+          <p className="flex justify-center items-center text-xl md:text-2xl mb-4  animate-left-to-right text-orange-600 border-2  rounded-full w-fit p-2 font-semibold bg-white cursor-pointer">
+            CivilEngineer <FaArrowRight className="ml-2  mt-1" />
           </p>
-          <p className="text-lg md:text-xl mb-8">
-            Jodi kokhono vul hoye jai tumi oparadh nio na ptate velit esse
-            cillum dolore.
+
+          <p className="flex flex-center text-lg md:text-xl mb-8 font-semibold animate-scale-up">
+            Experienced engineer with over 6 years specializing as a Planning
+            Engineer. Proficient in managing projects
+            <br /> such as a 380-flat, 19-floor multistorey residential building
+            at CMK, and overseeing construction of industrial
+            <br /> and commercial structures at URC. At Amaze, excelled in a
+            quality control role focusing on industrial,
+            <br /> commercial, and residential projects. Adept at project
+            planning, coordination, and ensuring adherence to quality standards{" "}
+            <br /> across diverse construction environments. Throughout my
+            career, I have cultivated strong project management
+            <br /> skills, demonstrating my ability to effectively plan,
+            coordinate, and execute projects. I am confident in my
+            <br /> capacity to contribute to and lead project management
+            initiatives successfully.
           </p>
 
           {/* Customizable  buttons*/}
@@ -47,9 +61,9 @@ const Home = () => {
           <img
             src={man}
             alt="James Smith"
-            className="rounded-lg shadow-lg w-72 md:w-96 mx-auto md:ml-12 mb-6"
+            className="rounded-lg shadow-lg w-72 md:w-96 mx-auto  mb-6"
           />
-          <div className="absolute top-10 right-10 bg-white p-3 rounded-lg shadow-lg">
+          <div className="absolute top-20 right-20 bg-white p-3 rounded-lg shadow-lg">
             <p className="text-blue-900 text-xl font-bold">5</p>
             <p className="text-gray-600 text-sm">Years of Success</p>
           </div>
