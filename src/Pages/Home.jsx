@@ -24,7 +24,7 @@ const Home = () => {
               CivilEngineer <FaArrowRight className="ml-2 mt-1" />
             </p>
           </a>
-          <p className="text-justify text-sm md:text-base lg:text-lg mb-8 font-medium leading-relaxed px-4 md:px-0 md:max-w-[800px] animate-bottom-to-top">
+          <p className="text-justify text-sm md:text-base lg:text-lg mb-8 font-medium leading-relaxed px-4 md:px-0 md:max-w-[800px] animate-bottom-to-top delay-700">
             Experienced engineer with over 6 years specializing as a Planning
             Engineer. Proficient in managing projects such as a 380-flat,
             19-floor multistorey residential building at CMK, and overseeing

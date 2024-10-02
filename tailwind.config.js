@@ -17,6 +17,8 @@ module.exports = {
         "bottom-to-top": "bottomToTop 1s ease-out forwards",
         "left-to-right": "leftToRight 1s ease-out forwards",
         "scale-up": "scaleUp 0.5s ease-out forwards",
+        fadeInLeft: "fadeInLeft 1s ease-out",
+        fadeInRight: "fadeInRight 1s ease-out",
       },
       keyframes: {
         wiggle: {
@@ -34,6 +36,14 @@ module.exports = {
         scaleUp: {
           "0%": { transform: "scale(0.5)", opacity: "0" },
           "100%": { transform: "scale(1)", opacity: "1" },
+        },
+        fadeInLeft: {
+          "0%": { opacity: 0, transform: "translateX(-50px)" },
+          "100%": { opacity: 1, transform: "translateX(0)" },
+        },
+        fadeInRight: {
+          "0%": { opacity: 0, transform: "translateX(50px)" },
+          "100%": { opacity: 1, transform: "translateX(0)" },
         },
       },
     },
