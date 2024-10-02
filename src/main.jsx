@@ -5,8 +5,8 @@ import "./index.css";
 
 import Home from "./Pages/Home";
 import About from "./Pages/About";
-import Portfolio from "./Pages/portfolio";
 import Service from "./Pages/Service";
+import Portfolio from "./Pages/Portfolio";
 import Contact from "./Pages/Contact";
 
 import Layout from "./components/Layout";
