@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <div
       id="home"
-      className="bg-gradient-to-r from-indigo-900 to-blue-600 min-h-screen p-10 font-primary"
+      className="bg-gradient-to-r from-indigo-900 to-blue-600 min-h-screen   p-10 font-primary"
     >
       <div className="container mx-auto flex flex-col-reverse md:flex-row items-center justify-between px-4">
         {/* Left Section */}

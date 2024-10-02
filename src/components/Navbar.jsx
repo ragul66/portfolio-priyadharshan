@@ -161,7 +161,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className=" bg-gradient-to-r from-indigo-900 to-blue-600 p-10 font-primary">
+      <div className=" bg-gradient-to-r from-indigo-900 to-blue-600 p-3 md:p-10 font-primary">
         <nav className="bg-blue-900 p-4">
           <div className="container mx-auto flex justify-between items-center">
             {/* Logo */}
