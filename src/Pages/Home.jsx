@@ -2,6 +2,7 @@
 import React from "react";
 import man from "../assets/portfolioman.jpg";
 import { FaArrowRight } from "react-icons/fa6";
+import TypingText from "../components/TypingText";
 
 const Home = () => {
   return (
@@ -15,15 +16,14 @@ const Home = () => {
           <h1 className="text-4xl md:text-6xl font-bold mb-4 animate-bottom-to-top">
             Hello I'm
           </h1>
-          <h2 className="text-5xl md:text-7xl font-extrabold text-white mb-6">
-            PriyaDharshan
-          </h2>
+          {/* Typing animation for PriyaDharshan */}
+          <TypingText text="PriyaDharshan" speed={150} />{" "}
+          {/* Add typing effect */}
           <a href="/service">
             <p className="flex ml-16 md:ml-0 text-xl md:text-2xl mb-4 animate-left-to-right text-orange-600 border-2 rounded-full w-fit p-2 font-semibold bg-white cursor-pointer">
               CivilEngineer <FaArrowRight className="ml-2 mt-1" />
             </p>
           </a>
-
           <p className="text-justify text-sm md:text-base lg:text-lg mb-8 font-medium leading-relaxed px-4 md:px-0 md:max-w-[800px] animate-bottom-to-top">
             Experienced engineer with over 6 years specializing as a Planning
             Engineer. Proficient in managing projects such as a 380-flat,
@@ -38,7 +38,6 @@ const Home = () => {
             confident in my capacity to contribute to and lead project
             management initiatives successfully.
           </p>
-
           {/* Customizable buttons */}
           {/* <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6">
             <a
