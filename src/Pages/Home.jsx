@@ -18,7 +18,7 @@ const Home = () => {
           </h1>
           <div>
             {/* Typing animation for PriyaDharshan */}
-            <TypingText text="PriyaDharshan" speed={150} />
+            <TypingText text="PriyaDarshan" speed={150} />
           </div>
           <a href="/service">
             <p className="flex mx-auto lg:mx-0 text-lg sm:text-xl md:text-2xl mb-4 animate-left-to-right text-orange-600 border-2 rounded-full w-fit p-2 font-semibold bg-white cursor-pointer">
