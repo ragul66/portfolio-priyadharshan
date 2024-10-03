@@ -8,23 +8,24 @@ const Home = () => {
   return (
     <div
       id="home"
-      className="bg-gradient-to-r from-indigo-900 to-blue-600 min-h-screen   p-10 font-primary"
+      className="bg-gradient-to-r from-indigo-900 to-blue-600 p-5 sm:p-7 md:p-10 font-primary h-full lg:max-h-screen" // Set full height for small screens and max height for larger screens
     >
-      <div className="container mx-auto flex flex-col-reverse md:flex-row items-center justify-between px-4">
+      <div className="container mx-auto flex flex-col-reverse lg:flex-row items-center justify-between px-4 h-full">
         {/* Left Section */}
-        <div className="text-white text-center md:text-left md:-mt-20">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4 animate-bottom-to-top">
+        <div className="text-white text-center lg:-mt-4 mt-3 lg:text-left  flex-1">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 animate-bottom-to-top ">
             Hello I'm
           </h1>
-          {/* Typing animation for PriyaDharshan */}
-          <TypingText text="PriyaDharshan" speed={150} />{" "}
-          {/* Add typing effect */}
+          <div>
+            {/* Typing animation for PriyaDharshan */}
+            <TypingText text="PriyaDharshan" speed={150} />
+          </div>
           <a href="/service">
-            <p className="flex ml-16 md:ml-0 text-xl md:text-2xl mb-4 animate-left-to-right text-orange-600 border-2 rounded-full w-fit p-2 font-semibold bg-white cursor-pointer">
-              CivilEngineer <FaArrowRight className="ml-2 mt-1" />
+            <p className="flex mx-auto lg:mx-0 text-lg sm:text-xl md:text-2xl mb-4 animate-left-to-right text-orange-600 border-2 rounded-full w-fit p-2 font-semibold bg-white cursor-pointer">
+              Civil Engineer <FaArrowRight className="ml-2 mt-1" />
             </p>
           </a>
-          <p className="text-justify text-sm md:text-base lg:text-lg mb-8 font-medium leading-relaxed px-4 md:px-0 md:max-w-[800px] animate-bottom-to-top delay-700">
+          <p className="text-justify text-xs sm:text-sm md:text-base lg:text-lg mb-8 font-medium leading-relaxed px-2 sm:px-4 lg:px-0 lg:max-w-[800px] animate-bottom-to-top delay-700">
             Experienced engineer with over 6 years specializing as a Planning
             Engineer. Proficient in managing projects such as a 380-flat,
             19-floor multistorey residential building at CMK, and overseeing
@@ -38,37 +39,24 @@ const Home = () => {
             confident in my capacity to contribute to and lead project
             management initiatives successfully.
           </p>
-          {/* Customizable buttons */}
-          {/* <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6">
-            <a
-              href="#quote"
-              className="bg-blue-500 px-6 py-3 rounded-md hover:bg-blue-700 text-white"
-            >
-              Get a Quote
-            </a>
-            <a
-              href="/about"
-              className="border border-white px-6 py-3 rounded-md hover:bg-white hover:text-blue-600 text-white"
-            >
-              About Me
-            </a>
-          </div> */}
         </div>
 
         {/* Right Section (Image and Stats) */}
-        <div className="relative animate-bottom-to-top">
+        <div className="relative w-full sm:w-auto lg:w-1/2 flex-1 animate-bottom-to-top">
           <img
             src={man}
             alt="James Smith"
-            className="rounded-lg shadow-lg w-72 md:w-96 mx-auto mb-6"
+            className="rounded-lg shadow-lg mx-auto lg:h-[460px] w-48 sm:w-60 md:w-80 lg:w-96 lg:mr-10"
           />
-          <div className="absolute top-0 left-40 md:-top-10 md:left-64 bg-white p-3 rounded-lg shadow-lg">
-            <p className="text-blue-900 text-xl font-bold">5</p>
-            <p className="text-gray-600 text-sm">Years of Success</p>
+          <div className="absolute top-0 right-8 md:right-12 lg:ml-48 bg-white p-3 rounded-lg shadow-lg">
+            <p className="text-blue-900 text-lg sm:text-xl font-bold">5</p>
+            <p className="text-gray-600 text-xs sm:text-sm">Years of Success</p>
           </div>
-          <div className="absolute bottom-10 md:bottom-24 md:-left-12 bg-white p-3 rounded-lg shadow-lg">
-            <p className="text-pink-600 text-xl font-bold">12</p>
-            <p className="text-gray-600 text-sm">Projects Completed</p>
+          <div className="absolute bottom-10 left-8 sm:left-12 lg:left-52 bg-white p-3 rounded-lg shadow-lg">
+            <p className="text-pink-600 text-lg sm:text-xl font-bold">12</p>
+            <p className="text-gray-600 text-xs sm:text-sm">
+              Projects Completed
+            </p>
           </div>
         </div>
       </div>
