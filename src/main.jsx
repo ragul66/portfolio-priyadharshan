@@ -6,7 +6,7 @@ import "./index.css";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Service from "./Pages/Service";
-import Portfolio from "./Pages/Portfolio";
+import Education from "./Pages/Education";
 import Contact from "./Pages/Contact";
 
 import Layout from "./components/Layout";
@@ -24,8 +24,8 @@ const router = createBrowserRouter([
         element: <About />,
       },
       {
-        path: "/portfolio",
-        element: <Portfolio />,
+        path: "/education",
+        element: <Education />,
       },
       {
         path: "/service",

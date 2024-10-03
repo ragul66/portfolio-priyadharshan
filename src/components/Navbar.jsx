@@ -162,7 +162,7 @@ const Navbar = () => {
   return (
     <>
       <div className=" bg-gradient-to-r from-indigo-900 to-blue-600 p-3 md:p-10 font-primary">
-        <nav className="from-blue-600 to-indigo-900 p-4">
+        <nav className="from-blue-600 to-indigo-900 p-4 border-b-2 border-white">
           <div className="container mx-auto flex justify-between items-center">
             {/* Logo */}
             <div className="text-2xl text-white font-bold">Portfolio</div>
@@ -187,10 +187,10 @@ const Navbar = () => {
               </li>
               <li>
                 <a
-                  href="/portfolio"
-                  className={`${isActive("/portfolio")} hover:text-orange-500`}
+                  href="/education"
+                  className={`${isActive("/education")} hover:text-orange-500`}
                 >
-                  Portfolio
+                  Education
                 </a>
               </li>
               <li>

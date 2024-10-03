@@ -105,11 +105,11 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="mt-16 w-full flex justify-center">
+      {/* <div className="mt-16 w-full flex justify-center">
         <h2 className="text-3xl font-primary font-bold  bg-clip-text  text-orange-600">
           PriyaDarshan
         </h2>
-      </div>
+      </div> */}
     </section>
   );
 };
