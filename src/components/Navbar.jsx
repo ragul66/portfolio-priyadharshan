@@ -292,12 +292,22 @@ const Navbar = () => {
               </li>
               <li>
                 <a
-                  href="/portfolio"
+                  href="/education"
                   className={`${isActive(
-                    "/portfolio"
+                    "/education"
                   )} block hover:text-orange-500`}
                 >
-                  Portfolio
+                  Education
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/experience"
+                  className={`${isActive(
+                    "/experience"
+                  )} block hover:text-orange-500`}
+                >
+                  Experience
                 </a>
               </li>
               <li>
