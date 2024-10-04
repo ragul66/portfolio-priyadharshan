@@ -34,7 +34,7 @@
 //                 </a>
 //               </li>
 //               <li>
-//                 <a href="/service" className="hover:text-orange-500">
+//                 <a href="/skills" className="hover:text-orange-500">
 //                   Service
 //                 </a>
 //               </li>
@@ -203,10 +203,10 @@ const Navbar = () => {
               </li>
               <li>
                 <a
-                  href="/service"
-                  className={`${isActive("/service")} hover:text-orange-500`}
+                  href="/skills"
+                  className={`${isActive("/skills")} hover:text-orange-500`}
                 >
-                  Service
+                  Skills
                 </a>
               </li>
               <li>
@@ -312,12 +312,12 @@ const Navbar = () => {
               </li>
               <li>
                 <a
-                  href="/service"
+                  href="/skills"
                   className={`${isActive(
-                    "/service"
+                    "/skills"
                   )} block hover:text-orange-500`}
                 >
-                  Service
+                  Skills
                 </a>
               </li>
               <li>

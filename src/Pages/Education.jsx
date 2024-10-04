@@ -92,13 +92,14 @@ const Education = () => {
     },
     {
       degree: "10th Standard",
-      institution: "E.B.G. Matriculation School, Tamil Nadu, India",
+      institution:
+        "FUSCOS Matriculation Higher secondary school,Tamil Nadu, India",
       period: "August 2009 - May 2010",
     },
   ];
 
   return (
-    <section className="bg-gradient-to-r from-indigo-900 to-blue-600 text-white p-4 lg:max-h-screen">
+    <section className="bg-gradient-to-r from-indigo-900 to-blue-600 text-white p-4 lg:max-h-screen font-primary">
       <div className="max-w-7xl mx-auto flex flex-col items-center justify-center">
         {/* Title Section */}
         <div className="text-center mb-12">
@@ -128,9 +129,7 @@ const Education = () => {
                 {edu.degree}
               </h3>
               <p className="text-xl animate-left-to-right">{edu.institution}</p>
-              <p className="text-sm hover:text-black text-gray-200 animate-left-to-right">
-                {edu.period}
-              </p>
+              <p className="text-sm  animate-left-to-right">{edu.period}</p>
             </div>
           ))}
         </div>

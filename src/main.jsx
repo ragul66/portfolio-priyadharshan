@@ -6,7 +6,7 @@ import "./index.css";
 //pages
 import Home from "./Pages/Home";
 import About from "./Pages/About";
-import Service from "./Pages/Service";
+import Skills from "./Pages/Skills";
 import Education from "./Pages/Education";
 import Contact from "./Pages/Contact";
 import Experience from "./Pages/Experience";
@@ -31,8 +31,8 @@ const router = createBrowserRouter([
         element: <Education />,
       },
       {
-        path: "/service",
-        element: <Service />,
+        path: "/skills",
+        element: <Skills />,
       },
       {
         path: "/experience",

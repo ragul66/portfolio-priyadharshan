@@ -1,6 +1,6 @@
 // src/AboutMe.js
 import React from "react";
-import about from "../assets/about.webp";
+import about from "../assets/about.jpg";
 
 const About = () => {
   return (
