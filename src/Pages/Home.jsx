@@ -3,6 +3,8 @@ import React from "react";
 import image from "../assets/homeimage.png";
 import { FaArrowRight } from "react-icons/fa6";
 import TypingText from "../components/TypingText";
+
+//Pages from src
 import About from "./About";
 import Education from "./Education";
 import Experience from "./Experience";
@@ -15,7 +17,7 @@ const Home = () => {
     <>
       <div
         id="home"
-        className="bg-gradient-to-r from-indigo-900 to-blue-600 p-2 sm:p-7 md:p-10 font-primary h-full lg:max-h-screen" // Set full height for small screens and max height for larger screens
+        className="bg-gradient-to-r from-indigo-900 to-blue-600 p-0 sm:p-2 md:p-10 font-primary h-full lg:max-h-screen" // Set full height for small screens and max height for larger screens
       >
         <div className="container mx-auto flex flex-col-reverse lg:flex-row items-center justify-between px-4 h-full">
           {/* Left Section */}
