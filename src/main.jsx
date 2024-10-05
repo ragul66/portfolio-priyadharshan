@@ -10,6 +10,7 @@ import Skills from "./Pages/Skills";
 import Education from "./Pages/Education";
 import Contact from "./Pages/Contact";
 import Experience from "./Pages/Experience";
+import Projects from "./Pages/Projects";
 
 // import layout for Navbar
 import Layout from "./components/Layout";
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
       {
         path: "/experience",
         element: <Experience />,
+      },
+      {
+        path: "/project",
+        element: <Projects />,
       },
       {
         path: "/contact",

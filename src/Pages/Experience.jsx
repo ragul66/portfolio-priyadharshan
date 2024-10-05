@@ -46,10 +46,10 @@ const Experience = () => {
 
   return (
     <div className="mx-auto p-6 lg:max-h-screen bg-gradient-to-r from-indigo-900 to-blue-600 lg:-mt-10 font-primary ">
-      <h1 className="text-3xl font-bold mb-8 text-center text-white">
+      <h1 className="text-3xl font-bold mb-2 text-center text-white mt-12">
         Experience
       </h1>
-      {/* <div className="border-b-4 border-orange-600 w-20 mx-auto mb-2"></div> */}
+      <div className="border-b-4 border-orange-600 w-20 mx-auto mb-4"></div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 animate-bottom-to-top">
         {experiences.map((experience, index) => (
           <div

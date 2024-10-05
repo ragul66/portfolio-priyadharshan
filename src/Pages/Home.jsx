@@ -3,7 +3,12 @@ import React from "react";
 import image from "../assets/homeimage.png";
 import { FaArrowRight } from "react-icons/fa6";
 import TypingText from "../components/TypingText";
-// import About from "./About";
+import About from "./About";
+import Education from "./Education";
+import Experience from "./Experience";
+import Skills from "./Skills";
+import Projects from "./Projects";
+import Contact from "./Contact";
 
 const Home = () => {
   return (
@@ -50,22 +55,27 @@ const Home = () => {
               alt="James Smith"
               className="rounded-lg shadow-lg mx-auto lg:h-[460px] w-48 sm:w-60 md:w-80 lg:w-80 lg:mr-10"
             />
-            <div className="absolute top-0 right-8 md:right-12 lg:ml-52 bg-white p-3 rounded-lg shadow-lg">
+            {/* <div className="absolute top-0 right-8 md:right-12 lg:ml-52 bg-white p-3 rounded-lg shadow-lg">
               <p className="text-blue-900 text-lg sm:text-xl font-bold">5</p>
               <p className="text-gray-600 text-xs sm:text-sm">
                 Years of Success
               </p>
-            </div>
-            <div className="absolute bottom-10 left-8 sm:left-12 lg:left-64 bg-white p-3 rounded-lg shadow-lg">
-              <p className="text-pink-600 text-lg sm:text-xl font-bold">2</p>
+            </div> */}
+            <div className="absolute bottom-10 left-8 sm:left-12 lg:left-72 bg-white p-3 rounded-lg shadow-lg">
+              <p className="text-pink-600 text-lg sm:text-xl font-bold">5</p>
               <p className="text-gray-600 text-xs sm:text-sm">
-                Projects Completed
+                Years of Success
               </p>
             </div>
           </div>
         </div>
       </div>
-      {/* <About /> */}
+      <About />
+      <Education />
+      <Experience />
+      <Skills />
+      <Projects />
+      <Contact />
     </>
   );
 };
