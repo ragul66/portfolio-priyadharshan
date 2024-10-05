@@ -3,18 +3,19 @@ import projectImage from "../assets/project-image.jpg"; // Replace with your act
 
 const Projects = () => {
   return (
-    <div className=" lg:min-h-screen bg-gradient-to-r from-indigo-900 to-blue-600 font-primary">
-      <h1 className="text-center text-3xl font-bold text-white mb-2">
+    <div className="lg:min-h-screen bg-gradient-to-r from-indigo-900 to-blue-600 font-primary">
+      <h1 className="text-center text-3xl font-bold text-white mb-2 md:mt-0 ">
         Project
       </h1>
       <div className="border-b-4 border-orange-600 w-20 mx-auto mb-4"></div>
       {/* Main Container */}
-      <div className="container  mx-auto shadow-lg  p-6 rounded-lg flex flex-col lg:flex-row bg-gradient-to-r from-indigo-900 to-blue-600">
-        <div className="flex-1 mb-6 lg:mb-0 lg:pr-6">
+      <div className="container mx-auto shadow-lg p-6 rounded-lg flex flex-col lg:flex-row bg-gradient-to-r from-indigo-900 to-blue-600">
+        <div className="flex-1 mb-6 lg:mb-0 lg:pr-6 flex justify-center items-center">
+          {/* Center the image on small and medium screens */}
           <img
             src={projectImage}
             alt="Project Management"
-            className="w-[250px] h-[250px] md:w-[350px] md:h-[350px] lg:w-[500px] lg:h-[500px] flex-center lg:ml-12  rounded-lg object-cover shadow-md"
+            className="w-[250px] h-[250px] md:w-[350px] md:h-[350px] lg:w-[500px] lg:h-[500px] rounded-lg object-cover shadow-md"
           />
         </div>
 
@@ -33,7 +34,7 @@ const Projects = () => {
           </h3>
 
           {/* Project Details */}
-          <div className=" text-white  rounded-lg ">
+          <div className="text-white rounded-lg ">
             <h2 className="text-2xl font-semibold mb-4">Project Details</h2>
             <p className="text-lg mb-2">
               This dissertation focuses on the role of Building Information
