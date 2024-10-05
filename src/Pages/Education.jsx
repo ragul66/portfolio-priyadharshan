@@ -31,7 +31,7 @@ const Education = () => {
       <div className="shadow-lg max-w-7xl mx-auto flex flex-col items-center justify-center">
         {/* Title Section */}
         <div className="text-center mb-12">
-          <h2 className="text-5xl font-bold mb-6 animate-scale-up">
+          <h2 className="text-4xl font-bold mb-6 animate-scale-up">
             EDUCATION <span className="text-sm">2009-2024</span>
             {/* <FaGraduationCap size={35} /> */}
           </h2>
