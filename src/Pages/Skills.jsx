@@ -63,55 +63,65 @@
 
 // export default Skills;
 import React from "react";
-import man from "../assets/portfolioman.jpg";
+import project from "../assets/projectmanagement.jpeg";
+import critical from "../assets/criticalthinking.jpg";
+import technical from "../assets/technicalprofieciency.jpeg";
+import regulatory from "../assets/regulatorycompliance.jpg";
+import communication from "../assets/communication.jpeg";
+import skill from "../assets/skills.png";
 
 const Skills = () => {
   const skills = [
     {
       title: "Project Management",
-      img: man, // Replace with actual image path
+      img: project, // Replace with actual image path
     },
     {
       title: "Critical Thinking and Problem Solving",
-      img: "/path-to-your-word-icon.png", // Replace with actual image path
+      img: critical, // Replace with actual image path
     },
     {
       title: "Technical Proficiency",
-      img: "/path-to-your-ppt-icon.png", // Replace with actual image path
+      img: technical, // Replace with actual image path
     },
     {
       title: "Regulatory Compliance",
-      img: "/path-to-your-autocad-icon.png", // Replace with actual image path
+      img: regulatory, // Replace with actual image path
     },
     {
       title: "Communication",
-      img: "/path-to-your-excel-icon.png", // Replace with actual image path
+      img: communication, // Replace with actual image path
     },
   ];
 
   return (
-    <div className=" mx-auto p-6 lg:min-h-screen bg-gradient-to-r from-indigo-900 to-blue-600 font-primary">
-      <h1 className="text-3xl font-bold mb-12 text-center text-white ">
-        Technical Skills
-      </h1>
-      <div className="flex flex-wrap justify-center gap-16 ">
-        {skills.map((skill, index) => (
-          <div
-            key={index}
-            className="flex flex-col items-center bg-transparent"
-          >
-            <img
-              src={skill.img}
-              alt={skill.title}
-              className="w-24 h-24 object-contain"
-            />
-            <h2 className="text-xl font-semibold text-white mt-4">
-              {skill.title}
-            </h2>
-          </div>
-        ))}
+    <>
+      <div className=" mx-auto p-6 lg:min-h-screen bg-gradient-to-r from-indigo-900 to-blue-600 font-primary ">
+        <h1 className="text-4xl font-bold mb-12 text-center text-white ">
+          Skills
+        </h1>
+        <div className="flex flex-wrap justify-center gap-16 ">
+          {skills.map((skill, index) => (
+            <div
+              key={index}
+              className="flex flex-col items-center bg-transparent border-2 border-white p-2 rounded-lg"
+            >
+              <img
+                src={skill.img}
+                alt={skill.title}
+                className="w-44 h-44 object-contain"
+              />
+              <h2 className="text-xl font-bold text-white mt-4 bg-gradient-to-tr from-indigo-600 to-orange-600">
+                {skill.title}
+              </h2>
+            </div>
+          ))}
+        </div>
+        {/* <div className="flex justify-center items-center">
+          <img src={skill} className="w-48 h-48 " />
+        </div> */}
       </div>
-    </div>
+    </>
   );
 };
 

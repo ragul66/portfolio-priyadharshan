@@ -134,7 +134,7 @@ const Contact = () => {
             <FaMobileAlt size={35} className="text-black" />
           </div>
           <h3 className="text-xl font-semibold">Mobile</h3>
-          <p className="text-md">+353-894455400</p>
+          <p className="text-md">0899471673</p>
         </div>
 
         <div className="flex flex-col items-center border-2 border-orange-600 rounded-3xl  p-6 gap-2">
@@ -142,7 +142,7 @@ const Contact = () => {
             <MdEmail size={35} className="text-black" />
           </div>
           <h3 className="text-xl font-semibold">Email</h3>
-          <p className="text-md">priyadarshan@outlook.com</p>
+          <p className="text-md">Priyadarshanravikumar@gmail.com</p>
         </div>
 
         <div className="flex flex-col items-center border-2 border-orange-600 rounded-3xl  p-6 gap-2">
@@ -151,7 +151,8 @@ const Contact = () => {
           </div>
           <h3 className="text-xl font-semibold">Address</h3>
           <p className="text-md">
-            Apt 3, 40 Gardiner St Upper, Dublin O1, D01RR04
+            Apartment 4 boatyard apartments, gas yard lane, <br />
+            Malahide K36WN32
           </p>
         </div>
 
@@ -160,8 +161,11 @@ const Contact = () => {
             <FaLinkedin size={35} className="text-black" />
           </div>
           <h3 className="text-xl font-semibold">LinkedIn</h3>
-          <a href="" className="underline">
-            linkedin.com/in/priyadarshan
+          <a
+            href="https://www.linkedin.com/in/priyadarshan-ravikumar-55ba62200/"
+            className="underline"
+          >
+            www.linkedin.com/in/priyadarshan-ravikumar-55ba62200/
           </a>
         </div>
       </div>

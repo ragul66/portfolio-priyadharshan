@@ -1,6 +1,6 @@
 // src/App.js
 import React from "react";
-import man from "../assets/portfolioman.jpg";
+import image from "../assets/homeimage.png";
 import { FaArrowRight } from "react-icons/fa6";
 import TypingText from "../components/TypingText";
 // import About from "./About";
@@ -46,18 +46,18 @@ const Home = () => {
           {/* Right Section (Image and Stats) */}
           <div className="relative w-full sm:w-auto lg:w-1/2 flex-1 animate-bottom-to-top">
             <img
-              src={man}
+              src={image}
               alt="James Smith"
-              className="rounded-lg shadow-lg mx-auto lg:h-[460px] w-48 sm:w-60 md:w-80 lg:w-96 lg:mr-10"
+              className="rounded-lg shadow-lg mx-auto lg:h-[460px] w-48 sm:w-60 md:w-80 lg:w-80 lg:mr-10"
             />
-            <div className="absolute top-0 right-8 md:right-12 lg:ml-48 bg-white p-3 rounded-lg shadow-lg">
+            <div className="absolute top-0 right-8 md:right-12 lg:ml-52 bg-white p-3 rounded-lg shadow-lg">
               <p className="text-blue-900 text-lg sm:text-xl font-bold">5</p>
               <p className="text-gray-600 text-xs sm:text-sm">
                 Years of Success
               </p>
             </div>
-            <div className="absolute bottom-10 left-8 sm:left-12 lg:left-52 bg-white p-3 rounded-lg shadow-lg">
-              <p className="text-pink-600 text-lg sm:text-xl font-bold">12</p>
+            <div className="absolute bottom-10 left-8 sm:left-12 lg:left-64 bg-white p-3 rounded-lg shadow-lg">
+              <p className="text-pink-600 text-lg sm:text-xl font-bold">2</p>
               <p className="text-gray-600 text-xs sm:text-sm">
                 Projects Completed
               </p>
