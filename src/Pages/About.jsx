@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div
       id="about"
-      className=" lg:space-x-24 bg-gradient-to-r from-indigo-900 to-blue-600 h-full lg:max-h-screen text-white p-5 sm:p-10 flex flex-col lg:flex-row items-center font-primary"
+      className="shadow-lg lg:space-x-24 bg-gradient-to-r from-indigo-900 to-blue-600 h-full lg:max-h-screen text-white p-5 sm:p-10 flex flex-col lg:flex-row items-center font-primary"
     >
       {/* Left Section - Image */}
       <div className="flex-1 flex justify-center lg:justify-end lg:items-center mb-6 lg:mb-0 animate-left-to-right">

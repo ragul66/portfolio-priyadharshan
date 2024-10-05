@@ -27,8 +27,8 @@ const Education = () => {
   ];
 
   return (
-    <section className="bg-gradient-to-r from-indigo-900 to-blue-600 text-white p-4 lg:max-h-screen font-primary">
-      <div className="max-w-7xl mx-auto flex flex-col items-center justify-center">
+    <section className="shadow-lg bg-gradient-to-r from-indigo-900 to-blue-600 text-white p-4 lg:max-h-screen font-primary">
+      <div className="shadow-lg max-w-7xl mx-auto flex flex-col items-center justify-center">
         {/* Title Section */}
         <div className="text-center mb-12">
           <h2 className="text-5xl font-bold mb-6 animate-scale-up">
@@ -47,7 +47,7 @@ const Education = () => {
         </div>
 
         {/* Education Details Section */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 w-full max-w-7xl mb-3 animate-bottom-to-top">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 w-full max-w-7xl mb-3  animate-bottom-to-top">
           {educationDetails.map((edu, index) => (
             <div
               key={index}

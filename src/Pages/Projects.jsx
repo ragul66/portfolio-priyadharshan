@@ -3,20 +3,23 @@ import projectImage from "../assets/project-image.jpg"; // Replace with your act
 
 const Projects = () => {
   return (
-    <div className="bg-gray-100 min-h-screen bg-gradient-to-tr from-indigo-900 to-blue-600 font-primary">
+    <div className=" lg:min-h-screen bg-gradient-to-r from-indigo-900 to-blue-600 font-primary">
+      <h1 className="text-center text-3xl font-bold text-white mb-2">
+        Project
+      </h1>
+      <div className="border-b-4 border-orange-600 w-20 mx-auto mb-4"></div>
       {/* Main Container */}
-      <div className="container mx-auto shadow-lg bg-white p-6 rounded-lg flex flex-col lg:flex-row bg-gradient-to-tr from-indigo-900 to-blue-600">
-        {/* Image Section */}
+      <div className="container  mx-auto shadow-lg  p-6 rounded-lg flex flex-col lg:flex-row bg-gradient-to-r from-indigo-900 to-blue-600">
         <div className="flex-1 mb-6 lg:mb-0 lg:pr-6">
           <img
             src={projectImage}
             alt="Project Management"
-            className="w-[500px] h-[500px] lg:ml-12  rounded-lg object-cover shadow-md"
+            className="w-[250px] h-[250px] md:w-[350px] md:h-[350px] lg:w-[500px] lg:h-[500px] flex-center lg:ml-12  rounded-lg object-cover shadow-md"
           />
         </div>
 
         {/* Details Section */}
-        <div className="flex-1">
+        <div className="flex-1 ">
           {/* Project Header */}
           <h1 className="text-4xl font-bold text-orange-600 mb-4">
             Role of Building Information Models (BIM) in Civil Engineering
@@ -30,7 +33,7 @@ const Projects = () => {
           </h3>
 
           {/* Project Details */}
-          <div className=" text-white  rounded-lg mb-6">
+          <div className=" text-white  rounded-lg ">
             <h2 className="text-2xl font-semibold mb-4">Project Details</h2>
             <p className="text-lg mb-2">
               This dissertation focuses on the role of Building Information

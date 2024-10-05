@@ -7,7 +7,9 @@ import { FaLinkedin } from "react-icons/fa";
 const Contact = () => {
   return (
     <section className="bg-gradient-to-r from-indigo-900 to-blue-600 text-white lg:max-h-screen flex flex-col items-center justify-center ">
-      <h1 className="text-4xl lg:text-5xl font-bold mb-2">GET IN TOUCH</h1>
+      <h1 className="text-4xl lg:text-5xl font-bold mb-2 mt-12 lg:mt-0">
+        GET IN TOUCH
+      </h1>
       <p className="text-lg lg:text-xl italic mb-10  ">Let's Work Together</p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 text-center lg:grid-cols-2 lg:mb-3 p-12 md:p-0">

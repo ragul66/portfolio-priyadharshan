@@ -19,7 +19,7 @@ const Home = () => {
         id="home"
         className="bg-gradient-to-r from-indigo-900 to-blue-600 p-0 sm:p-2 md:p-10 font-primary h-full lg:max-h-screen" // Set full height for small screens and max height for larger screens
       >
-        <div className="container mx-auto flex flex-col-reverse lg:flex-row items-center justify-between px-4 h-full">
+        <div className="container shadow-lg mx-auto flex flex-col-reverse lg:flex-row items-center justify-between px-4 h-full">
           {/* Left Section */}
           <div className="text-white text-center lg:-mt-4 mt-3 lg:text-left  flex-1">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 animate-bottom-to-top ">
@@ -64,7 +64,7 @@ const Home = () => {
               </p>
             </div> */}
             <div className="absolute bottom-10 left-8 sm:left-12 lg:left-72 bg-white p-3 rounded-lg shadow-lg">
-              <p className="text-pink-600 text-lg sm:text-xl font-bold">5</p>
+              <p className="text-pink-600 text-lg sm:text-xl font-bold">6</p>
               <p className="text-gray-600 text-xs sm:text-sm">
                 Years of Success
               </p>

@@ -50,11 +50,11 @@ const Experience = () => {
         Experience
       </h1>
       <div className="border-b-4 border-orange-600 w-20 mx-auto mb-4"></div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 animate-bottom-to-top">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 animate-bottom-to-top ">
         {experiences.map((experience, index) => (
           <div
             key={index}
-            className="bg-transparent shadow-md shadow-white rounded-lg p-6 hover:shadow-lg transition duration-300 "
+            className="bg-transparent shadow-md shadow-white rounded-lg p-6 hover:shadow-lg transition duration-300 border-2"
           >
             <h2 className="text-xl font-semibold text-orange-600 animate-bottom-to-top">
               {experience.title}
