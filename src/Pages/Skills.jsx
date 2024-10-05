@@ -104,7 +104,7 @@ const Skills = () => {
           {skills.map((skill, index) => (
             <div
               key={index}
-              className="flex flex-col items-center bg-transparent border-2 border-white p-2 rounded-lg"
+              className="flex flex-col items-center bg-transparent border-2 border-white p-2 rounded-lg animate-bottom-to-top"
             >
               <img
                 src={skill.img}
