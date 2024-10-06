@@ -36,7 +36,7 @@ const Contact = () => {
           </a>
         </div>
 
-        <div className="flex flex-col items-center border-2 border-orange-600 rounded-3xl  p-6 gap-2 animate-bottom-to-top">
+        <div className="flex flex-col items-center border-2 border-orange-600 rounded-3xl  p-6 gap-2 animate-bottom-to-top mb-12">
           <div className="bg-blue-500 p-3 rounded-full mb-3">
             <FaRegAddressCard size={35} className="text-black" />
           </div>
@@ -47,7 +47,7 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="flex flex-col items-center border-2 border-orange-600 rounded-3xl p-6 gap-2 animate-bottom-to-top">
+        <div className="flex flex-col items-center border-2 border-orange-600 rounded-3xl p-6 gap-2 animate-bottom-to-top mb-12">
           <div className="bg-blue-500 p-3 rounded-full mb-3">
             <FaLinkedin size={35} className="text-black" />
           </div>
