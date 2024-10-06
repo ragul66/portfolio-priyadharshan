@@ -18,7 +18,8 @@ const Navbar = () => {
 
   const handleDownloadCV = () => {
     const link = document.createElement("a");
-    link.href = "/Priyadarshan Resume.pdf"; // Correct path to your file
+    link.href =
+      "https://portfolio-priyadharshan.vercel.app/Priyadarshan Resume.pdf"; // Correct path to your file
     link.download = "Priyadarshan CV"; // Name for the downloaded file
     link.click();
   };
