@@ -228,8 +228,8 @@ const Navbar = () => {
               </li>
               <li>
                 <a
-                  href="../public/Priyadarshan Resume.pdf" // Path to the CV file in the public folder
-                  download="Priyadarshan CV" // Sets the default name of the downloaded file
+                  href="#"
+                  onClick={handleDownloadCV} // Trigger the download with JavaScript
                   className="bg-orange-500 px-4 py-2 rounded hover:bg-orange-600 text-white"
                 >
                   Download CV
