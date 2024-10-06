@@ -1,4 +1,5 @@
 import React from "react";
+import { InView } from "react-intersection-observer";
 
 const Experience = () => {
   const experiences = [
@@ -45,32 +46,36 @@ const Experience = () => {
   ];
 
   return (
-    <div className="mx-auto p-6 lg:max-h-screen bg-gradient-to-r from-indigo-900 to-blue-600 lg:-mt-10 font-primary ">
+    <div className="mx-auto p-6 lg:max-h-screen bg-gradient-to-r from-indigo-900 to-blue-600 lg:-mt-10 font-primary">
       <h1 className="text-3xl font-bold mb-2 text-center text-white mt-12">
         Experience
       </h1>
       <div className="border-b-4 border-orange-600 w-20 mx-auto mb-4"></div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 animate-bottom-to-top ">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         {experiences.map((experience, index) => (
-          <div
-            key={index}
-            className="bg-transparent shadow-md shadow-white rounded-lg p-6 hover:shadow-lg transition duration-300 border-2"
-          >
-            <h2 className="text-xl font-semibold text-orange-600 animate-bottom-to-top">
-              {experience.title}
-            </h2>
-            <p className="text-white animate-left-to-right">
-              {experience.company}
-            </p>
-            <p className="text-white text-sm animate-left-to-right">
-              {experience.date}
-            </p>
-            <ul className="mt-4 list-disc list-inside space-y-2 text-white animate-left-to-right">
-              {experience.description.map((point, idx) => (
-                <li key={idx}>{point}</li>
-              ))}
-            </ul>
-          </div>
+          <InView key={index} triggerOnce={true} threshold={0.5}>
+            {({ inView, ref }) => (
+              <div
+                ref={ref}
+                className={`bg-transparent shadow-md shadow-white rounded-lg p-6 hover:shadow-lg transition duration-300 border-2 transform transition-transform duration-500 ${
+                  inView
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 translate-y-10"
+                }`}
+              >
+                <h2 className="text-xl font-semibold text-orange-600">
+                  {experience.title}
+                </h2>
+                <p className="text-white">{experience.company}</p>
+                <p className="text-white text-sm">{experience.date}</p>
+                <ul className="mt-4 list-disc list-inside space-y-2 text-white">
+                  {experience.description.map((point, idx) => (
+                    <li key={idx}>{point}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </InView>
         ))}
       </div>
     </div>

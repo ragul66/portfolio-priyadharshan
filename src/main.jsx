@@ -6,7 +6,7 @@ import "./index.css";
 //pages
 import Home from "./Pages/Home";
 import About from "./Pages/About";
-import Skills from "./Pages/Skills";
+import Skills1 from "./Pages/Skills1";
 import Education from "./Pages/Education";
 import Contact from "./Pages/Contact";
 import Experience from "./Pages/Experience";
@@ -33,7 +33,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/skills",
-        element: <Skills />,
+        element: <Skills1 />,
       },
       {
         path: "/experience",
