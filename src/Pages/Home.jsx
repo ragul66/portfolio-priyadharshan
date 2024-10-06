@@ -37,17 +37,17 @@ const Home = () => {
             </a>
             <p className="text-justify text-xs sm:text-sm md:text-base lg:text-lg mb-8 font-medium leading-relaxed px-2 sm:px-4 lg:px-0 lg:max-w-[800px] ">
               Experienced engineer with over 6 years specializing as a Planning
-              Engineer. Proficient in managing projects such as a 380-flat,
-              19-floor multistorey residential building at CMK, and overseeing
-              construction of industrial and commercial structures at URC. At
-              Amaze, excelled in a quality control role focusing on industrial,
-              commercial, and residential projects. Adept at project planning,
-              coordination, and ensuring adherence to quality standards across
-              diverse construction environments. Throughout my career, I have
-              cultivated strong project management skills, demonstrating my
-              ability to effectively plan, coordinate, and execute projects. I
-              am confident in my capacity to contribute to and lead project
-              management initiatives successfully.
+              and Quantity Surveyors. Proficient in managing projects such as a
+              380-flat, 19-floor multistorey residential building at CMK, and
+              overseeing construction of industrial and commercial structures at
+              URC. At Amaze, excelled in a quality control role focusing on
+              industrial, commercial, and residential projects. Adept at project
+              planning, coordination, and ensuring adherence to quality
+              standards across diverse construction environments. Throughout my
+              career, I have cultivated strong project management skills,
+              demonstrating my ability to effectively plan, coordinate, and
+              execute projects. I am confident in my capacity to contribute to
+              and lead project management initiatives successfully.
             </p>
           </div>
 
