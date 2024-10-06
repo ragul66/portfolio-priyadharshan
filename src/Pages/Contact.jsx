@@ -13,7 +13,7 @@ const Contact = () => {
       <p className="text-lg lg:text-xl italic mb-10  ">Let's Work Together</p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 text-center lg:grid-cols-2 lg:mb-3 p-12 md:p-0">
-        <div className="flex flex-col items-center border-2 border-orange-600 rounded-3xl p-6 gap-2">
+        <div className="flex flex-col items-center border-2 border-orange-600 rounded-3xl p-6 gap-2 animate-left-to-right">
           <div className="bg-blue-500 p-3 rounded-full mb-3">
             <FaMobileAlt size={35} className="text-black" />
           </div>
@@ -21,15 +21,22 @@ const Contact = () => {
           <p className="text-md">0899471673</p>
         </div>
 
-        <div className="flex flex-col items-center border-2 border-orange-600 rounded-3xl  p-6 gap-2">
+        <div className="flex flex-col items-center border-2 border-orange-600 rounded-3xl  p-6 gap-2 animate-left-to-right">
           <div className="bg-blue-500 p-3 rounded-full mb-3">
             <MdEmail size={35} className="text-black" />
           </div>
           <h3 className="text-xl font-semibold">Email</h3>
-          <p className="text-md">Priyadarshanravikumar@gmail.com</p>
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=Priyadarshanravikumar@gmail.com&su=Hello&body=Hi%20Priyadarshan,"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-md underline"
+          >
+            Priyadarshanravikumar@gmail.com
+          </a>
         </div>
 
-        <div className="flex flex-col items-center border-2 border-orange-600 rounded-3xl  p-6 gap-2">
+        <div className="flex flex-col items-center border-2 border-orange-600 rounded-3xl  p-6 gap-2 animate-bottom-to-top">
           <div className="bg-blue-500 p-3 rounded-full mb-3">
             <FaRegAddressCard size={35} className="text-black" />
           </div>
@@ -40,7 +47,7 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="flex flex-col items-center border-2 border-orange-600 rounded-3xl p-6 gap-2">
+        <div className="flex flex-col items-center border-2 border-orange-600 rounded-3xl p-6 gap-2 animate-bottom-to-top">
           <div className="bg-blue-500 p-3 rounded-full mb-3">
             <FaLinkedin size={35} className="text-black" />
           </div>

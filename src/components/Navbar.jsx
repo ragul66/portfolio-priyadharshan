@@ -12,7 +12,7 @@ const Navbar = () => {
 
   const isActive = (path) => {
     return location.pathname === path
-      ? "text-red-500"
+      ? "text-red-500 md:border-b-2 md:border-white lg:border-b-2 lg:border-white "
       : "hover:text-orange-500";
   };
 
@@ -37,17 +37,9 @@ const Navbar = () => {
               <li>
                 <a
                   href="/about"
-                  className={`${isActive("/about")} hover:text-orange-500`}
+                  className={`${isActive("/about")} hover:text-orange-500 `}
                 >
                   About
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/education"
-                  className={`${isActive("/education")} hover:text-orange-500`}
-                >
-                  Education
                 </a>
               </li>
               <li>
@@ -58,6 +50,15 @@ const Navbar = () => {
                   Experience
                 </a>
               </li>
+              <li>
+                <a
+                  href="/education"
+                  className={`${isActive("/education")} hover:text-orange-500`}
+                >
+                  Education
+                </a>
+              </li>
+
               <li>
                 <a
                   href="/skills"
@@ -82,9 +83,11 @@ const Navbar = () => {
                   Contact
                 </a>
               </li>
+              {/* Download CV Button */}
               <li>
                 <a
-                  href="#download"
+                  href="../public/Priyadarshan Resume.pdf" // Path to the CV file in the public folder
+                  download="Priyadarshan CV" // Sets the default name of the downloaded file
                   className="bg-orange-500 px-4 py-2 rounded hover:bg-orange-600 text-white"
                 >
                   Download CV
@@ -157,16 +160,6 @@ const Navbar = () => {
               </li>
               <li>
                 <a
-                  href="/education"
-                  className={`${isActive(
-                    "/education"
-                  )} block hover:text-orange-500`}
-                >
-                  Education
-                </a>
-              </li>
-              <li>
-                <a
                   href="/experience"
                   className={`${isActive(
                     "/experience"
@@ -175,6 +168,17 @@ const Navbar = () => {
                   Experience
                 </a>
               </li>
+              <li>
+                <a
+                  href="/education"
+                  className={`${isActive(
+                    "/education"
+                  )} block hover:text-orange-500`}
+                >
+                  Education
+                </a>
+              </li>
+
               <li>
                 <a
                   href="/skills"
@@ -207,8 +211,9 @@ const Navbar = () => {
               </li>
               <li>
                 <a
-                  href="#download"
-                  className="block bg-orange-500 px-4 py-2 rounded hover:bg-orange-600 text-white"
+                  href="../public/Priyadarshan Resume.pdf" // Path to the CV file in the public folder
+                  download="Priyadarshan CV" // Sets the default name of the downloaded file
+                  className="bg-orange-500 px-4 py-2 rounded hover:bg-orange-600 text-white"
                 >
                   Download CV
                 </a>
