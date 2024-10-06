@@ -92,7 +92,7 @@ const Navbar = () => {
                 </a>
               </li>
               {/* Download CV Button */}
-              {/* <li>
+              <li>
                 <a
                   href="https://portfolio-priyadharshan.vercel.app/Priyadarshan Resume.pdf" // Path to the CV file in the public folder
                   download="Priyadarshan CV" // Sets the default name of the downloaded file
@@ -100,8 +100,8 @@ const Navbar = () => {
                 >
                   Download CV
                 </a>
-              </li> */}
-              <li>
+              </li>
+              {/* <li>
                 <a
                   href="#"
                   onClick={handleDownloadCV} // Trigger the download with JavaScript
@@ -109,7 +109,7 @@ const Navbar = () => {
                 >
                   Download CV
                 </a>
-              </li>
+              </li> */}
             </ul>
 
             {/* Mobile Menu Toggle Button */}
@@ -232,7 +232,7 @@ const Navbar = () => {
                   onClick={handleDownloadCV} // Trigger the download with JavaScript
                   className="bg-orange-500 px-4 py-2 rounded hover:bg-orange-600 text-white"
                 >
-                  Download CV
+                  View CV
                 </a>
               </li>
             </ul>
